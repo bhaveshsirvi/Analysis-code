@@ -1,0 +1,65 @@
+################################
+##        Upsilon(4S)         ##
+################################
+Decay Upsilon(4S)
+1.000  B+ B-         VSS_BMIX dm;
+Enddecay
+
+################################
+##           B-               ##
+################################
+#The following are the decay modes which are of our interest. The first entry is the fraction of decays which will proceed via that specific mode
+# The following two entries are the decay products and finally is the decay model (refer to Evtgen manual for further details)
+# Anything following # are ignored.
+# We can play around with different fractions to carry out generation for different scenarios.
+Decay B-
+#0.73  D+  pi-  pi-   PHSP; 
+#0.27  D_0*0  pi-   PHSP;
+1.000  D_2*0  pi-   STS;
+Enddecay
+
+
+################################
+##  D_2*0,D_0*0               ##      
+################################
+
+Decay D_0*0
+1.000  D+ pi-        PHSP; 
+Enddecay
+
+Decay D_2*0
+1.000  D+ pi-        TSS; 
+Enddecay
+
+#######################################
+##            D+                     ##
+#######################################
+
+Decay D+
+1.000 K- pi+ pi+    D_DALITZ;
+Enddecay
+
+End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
